@@ -1,0 +1,28 @@
+.azul{
+    color: chocolate;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em
+}
+
+.rojo{
+    color: darkgreen;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3em;
+}
+
+.primero{
+    color: darkgoldenrod;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2em;
+}
+#container{
+    color: gray;
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:repeat(4, 1fr);
+    grid-template-rows: 200px 1fr 1fr 100px;
+    grid-gap: 10px;
+
+    
+}

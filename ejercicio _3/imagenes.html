@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imagenes</title>
+    <style>
+        .container {
+            height: 100vh;
+            width: 60%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3,1fr);
+            grid-gap: 8px;
+            grid-template-areas: 
+            "h h h h"
+            "s s s s"
+            "f f f f"
+
+        }
+        header{
+            grid-area: h;
+            background-color: black;
+          
+        }
+
+        section{
+            grid-area: s;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+        }
+        footer{
+            grid-area: f;
+            background-color: aquamarine;
+        }
+       h1, p{
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           color: aliceblue;
+           padding: 1rem;
+
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Imagenes responsivas</h1>
+            <p>Se require de la etiqueta, el atributo media y srcset </p>
+        </header>
+            <section>
+                <picture> 
+                    <source media="(min-width: 960px )" srcset="img/ss6.jpg">
+                    <source media="(min-width:460px )" srcset="img/ss4.jpg">
+                    <source media="(min-width:0px )" srcset="img/ss7.jpg">
+                        <img src="img/ss7.jpg" alt="Stale_Sandbech">
+                </picture>
+
+                
+            </section>
+            <footer>
+
+            </footer>
+    </div>
+    
+</body>
+</html>
