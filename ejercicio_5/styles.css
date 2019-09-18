@@ -1,0 +1,49 @@
+html{
+    box-sizing: border-box;
+
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+#container{
+    width: 80px;
+    margin: 0 auto;
+    background-color: beige;
+
+}
+h1, h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    padding: 1erm;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1rem;
+    font-size: .8rem;
+    line-height: 1.6rem;
+
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 10px;
+        
+}
+#cat1{
+    width: 400px;
+    float: left;
+    shape-outside: border-box;
+
+
+}
+#bart{
+    height: 400px;
+    float: left;
+
+
+}
+#cat2{
+    width: 400px;
+    float: left;
+    object-fit: cover;
+}
