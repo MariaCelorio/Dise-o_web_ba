@@ -1,0 +1,67 @@
+html{
+    box-sizing: border-box;
+    
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+#wrapper{
+    width: 80;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: aquamarine;
+    display: flex;
+    /*flex-direction: row-reverse;*/
+    /*flex-wrap: wrap-reverse;*/
+    /*flex-flow: column-reverse wrap-reverse;*/
+    justify-content: center;
+    align-items: baseline;
+
+}
+section{
+    border: solid black 1px;
+    width: 400px;
+
+}
+p{
+    padding: 1rem;
+}
+.Uno{
+    background-color: antiquewhite;
+    width: 100px;
+}
+.Dos{
+    background-color: blueviolet;
+}
+
+.Tres{
+    background-color: azure;
+    height: 100px;
+
+}
+.Cuatro{
+    background-color: antiquewhite;
+    height: 150px;
+}
+.Cinco{
+    background-color: blue;
+    height: 100px;
+
+}
+.Seis{
+    background-color: bisque;
+    width: 100px;
+}
+#wrapper2{
+    width: 80%;
+    height: 100vh;;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+.box{
+    width: 90px;
+}
