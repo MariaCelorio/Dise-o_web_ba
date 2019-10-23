@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,4 +67,74 @@
     </div>
     
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imagenes BPG</title>
+    <script type="text/javascript" src="js/bpgdec8a.js"></script>
+    <style>
+        canvas{
+            width: 1080px;
+        }
+            .container {
+                height: 100vh;
+                width: 50%;
+                margin:  auto;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(3,1fr);
+                grid-gap: 15px;
+                grid-template-areas: 
+                "h h h h h"
+                "s s s s s"
+                "f f f f f"
+    
+            }
+            header{
+                grid-area: h;
+                background-color: black;
+              
+            }
+    
+            section{
+                grid-area: s;
+                background-color: gray;
+                display: flex;
+                justify-content: center;
+            }
+            footer{
+                grid-area: f;
+                background-color: aquamarine;
+            }
+           h1, p{
+               font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+               color: aliceblue;
+               padding: 1rem;
+    
+           }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+                <h1>Imagen bpg.</h1>
+
+        </header>
+        <main>
+            
+            <figure>
+                <img src="img/ss6.bpg" alt="Stale" width="800">
+            </figure>
+            <figcaption> Stale Sandbech
+            </figcaption>
+        </main>
+        <footer></footer>
+    </div>
+    
+</body>
+>>>>>>> d6793ecadd24df4da696246703f572241e38a4a4
 </html>

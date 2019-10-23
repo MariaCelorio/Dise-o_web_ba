@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
   background-color: black;
     box-sizing: border-box;
@@ -60,4 +61,68 @@ footer{
   justify-content: center;
   color: azure;
   font-family: fantasy;
+=======
+html {
+  background-color: black;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+nav ul{
+  padding: 13px; 
+  margin: 5%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    background-color: white;
+   
+    
+    
+}
+li a{
+   
+  text-decoration: none;
+  color: black;
+}
+.flex-container {
+   
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    display: flex;
+    
+
+    justify-content: space-around;
+  }
+
+main{
+    display: flex;
+    justify-content: center;
+
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    
+}
+object{
+  height: 55vh;
+  
+      }
+
+footer{
+  display: flex;
+  justify-content: center;
+  color: azure;
+  font-family: fantasy;
+>>>>>>> d6793ecadd24df4da696246703f572241e38a4a4
 }

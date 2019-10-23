@@ -1,0 +1,331 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*---------------------- RESETEO DE CSS ----------------------*/
+*:focus {outline: none;}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+/*---------------------- ESTILOS GENERALES ----------------------*/
+* { box-sizing:border-box;}
+
+html {font-size:62%;}
+
+body {
+	background-image:url(fondo.jpg);
+	background-size: cover;
+	line-height: 5;
+	background-blend-mode: screen;
+	background-color:turquoise;
+	font: 1.6em "Century Gothic";
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	background-attachment: fixed;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1 {font-size: 2.2vw; margin-bottom:5%; }
+h2 {font-size: 2.6vw; 
+	margin-bottom:7%; 
+	text-align:center; 
+	font-weight: bold; 
+	color:#ed2553; 
+	letter-spacing: 10px;}
+
+h2, legend {font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"}
+
+fieldset {margin-bottom:8%;}
+legend {
+    font-size: 1.2vw;
+    text-align:center; 
+	color: #b5b1af;
+	font-weight:bold;
+	margin-bottom:4%;}
+
+
+label {
+	min-width:22%;
+	display:inline-block;
+	text-align: left;
+	margin-right: 4%;
+    margin-left: 6%;
+}
+
+input {
+	padding: 1%;
+	margin-bottom:3.5%;
+	min-width:32%;
+	margin-left: -6%;
+	text-align: left;
+	border-radius:4.5px;
+}
+
+input[type=date]{
+    margin-left:10px;
+}
+
+input[type=checkbox]{
+    margin-left:10px;
+}
+
+#contenedor-login, #contenedor-insercion, #contenedor-consulta {
+	margin:0 auto;
+	width: 33%;
+	padding:2%;}
+	
+#contenedor-login {
+	background-color:#ed2553;
+	opacity: 0.8;
+	position: fixed;
+	top: 0vw;
+	right: 0vw;
+	width:auto;
+	min-width:20%;
+    border-radius: 10px 10px 10px 10px;
+}
+	
+#contenedor-insercion {
+	background-color: white;
+	opacity: 0.9;
+	border-radius: 10px 10px 10px 10px;
+}
+	
+#contenedor-consulta {
+	background-color: white ;
+	opacity: 0.9;
+	border-radius: 10px 10px 10px 10px;
+}		
+
+/*---------------------- BOTONES  ----------------------*/
+input[type="submit"], input[type="reset"] {
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	margin: 5% 2% 5% 0;
+	padding: 2% 3%;
+	min-width:auto;
+	width:auto;
+	font-weight:bold;
+	font-size:1.1em;
+	border-radius:5px;
+	box-shadow:0 5px 6px -6px black;
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.enviosubmit {
+    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(top, #68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+
+input[type=submit]{
+    background-color: #ed2553;
+} 
+input[type=reset]{
+    background-color: gray;
+}
+
+#contenedor-login input[type=submit]{
+    background-color:white;
+	color: #ed2553;
+}
+
+#contenedor-login input[type=submit]:hover{
+    background-color:gainsboro;
+	color: #ed2553;
+}
+
+input[type=reset]:hover{
+    background-color:darkgrey;
+}
+
+#contenedor-login input[type=text], #contenedor-login input[type=password] {
+	width: 95%;
+}
+
+.enviosubmit:hover {
+    opacity:0.85;
+	background-color: turquoise;
+    cursor: pointer; 
+}
+
+.enviosubmit:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset; 
+    -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+}
+.contenedor-botones {text-align:center;}
+
+	
+#contenedor-imagen {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+}
+	
+#contenedor-imagen img {
+	mix-blend-mode: color;
+}
+
+
+/* *************************************************** ESTILOS DEL FORMULARIO *************************************************** */
+legend {text-transform:uppercase;}
+.form_hint, .required_notification {font-size:0.9rem;}
+:-moz-placeholder {color:#ed2553;}
+::-webkit-input-placeholder {color:#ed2553;}
+	
+
+
+/*---------------------- CAMPOS INVÁLIDOS  ----------------------*/
+/* input:invalid {border: 1px solid purple;} 
+input:valid {border: 1px solid green;}*/ /* Estilo por defecto */
+
+
+
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid { /* when a field is considered invalid by the browser */
+	background: #fff url(../imgs/invalid.png) no-repeat 98% center;
+	box-shadow: 0 0 5px #7a7776;
+	border-color: #b03535;}
+
+
+
+/*---------------------- CAMPOS VÁLIDOS  ----------------------*/
+.contact_form input:focus:valid, .contact_form input:required:valid, .contact_form textarea:required:valid { /* when a field is considered valid by the browser */
+	background: #fff url(../imgs/valid.png) no-repeat 98% center;
+	box-shadow: 0 0 5px #5cd053;
+	border-color: #28921f;}
+	
+
+	
+/*---------------------- CAMPOS DE INSTRUCCIONES  ----------------------*/
+.form_hint {
+	background-color: #d45252;
+	border-radius: 3px;
+	color: white;
+	margin-left:8px;
+	padding: 0.5%;
+	z-index: 999; /* hints stay above all other elements */
+	position: absolute; /* allows proper formatting if hint is two lines */
+	 display:none;
+
+}
+
+.form_hint::before {
+	content: "\25C0"; /* left point triangle in escaped unicode */
+	color:#d45252;
+	position: absolute;
+	top:1px;
+	left:-6px;
+    display:none;
+}
+
+.contact_form input:focus + .form_hint {display: inline;}
+
+.contact_form input:required:valid + .form_hint {background: #28921f;} /* change form hint color when valid */
+
+.contact_form input:required:valid + .form_hint::before {color:#28921f;} /* change form hint arrow color when valid */
+
+
+
+/*---------------------- TABLA ----------------------*/
+
+#tabla{
+   
+    background-color:white;
+    font-size: 1.2vw;
+    text-align: left;
+    margin:150px;
+    margin-bottom:7%; 
+	opacity: 0.9;
+
+    border-radius: 10px 10px 10px 10px;
+    
+}
+
+table{
+    margin:30px; 
+}
+
+
+td{
+    border:8px;
+    width:100px;
+    padding: 2%;
+    margin-bottom:10%;
+    
+}
+
+th{
+    border:8px;
+    width:100px;
+    font-weight: bold; 
+    padding: 2%;
+    margin-bottom:5%;
+}
+
+#titulin{
+    margin:8%;
+}
