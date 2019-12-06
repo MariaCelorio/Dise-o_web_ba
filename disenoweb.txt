@@ -1,0 +1,3 @@
+media queryes
+css grid 
+flexbox 
