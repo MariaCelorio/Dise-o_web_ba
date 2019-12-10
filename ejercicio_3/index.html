@@ -4,22 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Ejercicio 3 Galería </title>
+        <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+        <style>.ocultar {
+            display: none;
+        }
+        </style>
 </head>
 <body>
-    ....
+    <div class="container">
 
-    <!-- jQuery version must be >= 1.8.0; -->
-    <script src="jquery.min.js"></script>
+        <section>
+            <h1>Stale Sandbech</h1>
+            <div class="galeria">
 
-    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 
-    <script src="js/lightgallery.min.js"></script>
+ <div id="lightgallery">
+     <a href="img/ss1.jpg" data-sub-html="#caption1">
+         <img src="img/ss1.jpg" alt="ss1"/>
+     </a>
+     <a href="img/ss2.jpg" data-sub-html="#caption2">
+         <img src="img/ss2.jpg" alt="s2"/>
+     </a>
+     <a href="img/ss3.jpg" data-sub-html="#caption3">
+         <img src="img/ss3.jpg" alt="ss3"/>
+     </a>
+     <a href="img/ss4.jpg" data-sub-html="#caption4">
+         <img src="img/ss4.jpg" alt="ss4"/>
+     </a>
+     <a href="img/ss5.jpg" data-sub-html="#caption4">
+        <img src="img/ss5.jpg" alt="ss5"/>
+    </a>
+    <a href="img/ss6.jpg" data-sub-html="#caption4">
+        <img src="img/ss6.jpg" alt="ss6"/>
+    </a>
+   </div>
+   <div id="caption1" class="ocultar">
+       <h4>Stale Sandbech</h4>
+       <p>2017.12.09</p>
+   </div>
+   <div id="caption2" class="ocultar">
+       <h4>Stale Sandbech</h4>
+       <p>2018.10.09</p>
+   </div>
+   <div id="caption3" class="ocultar">
+     <h4>Stale Sandbech</h4>
+     <p>Winter 2007</p>
+ </div>
+ <div id="caption4" class="ocultar">
+     <h4>Stale Sandbech</h4>
+     <p>XGames</p>
+ </div>
+        </section> 
+    </div>
 
-    <!-- lightgallery plugins -->
-    <script src="js/lg-thumbnail.min.js"></script>
-    <script src="js/lg-fullscreen.min.js"></script>
+  <!-- jQuery version must be >= 1.8.0; -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/lightgallery-all.js"></script>
+
+  <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+  <!-- lightgallery plugins -->
+  <script src="modules/lg-thumbnail.min.js"></script>
+  <script src="modules/lg-fullscreen.min.js"></script> 
+
+
+  <script type="text/javascript">
+      $(document).ready(function() {
+          $("#lightgallery").lightGallery(); 
+      });
+  </script>
 
     
 </body>  
