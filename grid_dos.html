@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid 2</title>
+    <style>
+    .container{
+        height: 100vh;
+        width: 70%;
+        margin: 0 auto;
+        display: grid; 
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 10px;
+        grid-template-areas:
+        ". . . . . . . ."
+        ". h h h . h h ."
+        ". a a a . . . as"
+        ". a a a . . . as"
+        ". . . . . . . as"
+        ". f f f f . . as"
+    }
+    .child{
+        border: solid rgb(134, 114, 250) 2px;
+        background-color: rgb(186, 255, 223);
+        z-index: 10;
+    }
+    header{
+        grid-area: h;
+    }
+    article{
+        grid-area: a;
+    }
+    aside{
+        grid-area: as;
+    }
+    footer{
+        grid-area: f;
+    }
+    section{
+        grid-area: 2 / 3 / 6 / 9;
+        background-color: rgba(160, 247, 239, 0.531);
+        z-index: 9;
+    }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <header class="child">
+                <p>Header</p>
+            </header>
+            <article class="child">
+                <p>Article</p>
+            </article>
+            <aside class="child">
+                <p>Aside</p>
+            </aside>
+            <footer class="child">
+                <p>Footer</p>
+            </footer>
+            <section>
+                <p>Section</p>
+            </section>
+    </div>
+</body>
+</html>
