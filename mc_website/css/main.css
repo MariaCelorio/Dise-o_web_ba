@@ -1,51 +1,10 @@
-/**
- * =================================================================== 
- *
- *  Kards v1.0 Main Stylesheet
- *  url: styleshout.com
- *  03-01-2016
- *  ------------------------------------------------------------------
- *  TOC:
- *  01. webfonts and iconfonts
- *  02. base style overrides
- *  03. typography & general theme styles
- *  04. preloader
- *  05. forms
- *  06. buttons 
- *  07. other components
- *  08. common styles
- *  09. header styles
- *  10. intro
- *  11. about
- *  12. resume
- *  13. portfolio
- *  14. call-to-action section
- *  15. services
- *  16. stats
- *  17. contact
- *  18. footer
- *
- * =================================================================== 
- */
 
-
-/** 
- * ===================================================================
- * 01. webfonts and iconfonts - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- 
- */
 @import url("fonts.css");
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
 
 
-/** 
- * ===================================================================
- * 02. base style overrides - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 html {
 	font-size: 10px;
 }
@@ -77,10 +36,7 @@ body {
 	color: #6e6e6e;
 }
 
-/**
- * links - (_document-setup.scss)
- * -------------------------------------------------------------------
- */
+
 a, a:visited {
 	color: #000000;
 	-moz-transition: all 0.3s ease-in-out;
@@ -94,12 +50,6 @@ a:hover, a:focus, a:active {
 	outline: 0;
 }
 
-/** 
- * ===================================================================
- * 03. typography & general theme styles - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- 
- */
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
 	font-family: "poppins-semibold", sans-serif;
 	color: #313131;
@@ -274,10 +224,7 @@ hr {
 	height: 0;
 }
 
-/**
- * Lists - (_document-setup.scss)  
- * -------------------------------------------------------------------
- */
+
 ol {
 	list-style: decimal;
 }
@@ -322,10 +269,7 @@ dd {
 	margin: 0 0 0 2rem;
 }
 
-/**
- * tables - (_document-setup.scss)  
- * -------------------------------------------------------------------
- */
+
 table {
 	border-width: 0;
 	width: 100%;
@@ -355,10 +299,6 @@ th:last-child, td:last-child {
 	-webkit-overflow-scrolling: touch;
 }
 
-/**
- * Spacing - (_document-setup.scss)  
- * -------------------------------------------------------------------
- */
 button, .button {
 	margin-bottom: 1.2;
 }
@@ -382,10 +322,7 @@ form,
 	margin-bottom: 3rem;
 }
 
-/**
- * floated image - (_document-setup.scss)  
- * -------------------------------------------------------------------
- */
+
 img.pull-right {
 	margin: .9rem 0 0 2.4rem;
 }
@@ -393,10 +330,7 @@ img.pull-left {
 	margin: .9rem 2.4rem 0 0;
 }
 
-/**
- * block grid paddings - (_document-setup.scss) 
- * -------------------------------------------------------------------
- */
+
 .bgrid {
 	padding: 0 20px;
 }
@@ -421,10 +355,7 @@ img.pull-left {
 	}
 }
 
-/**
- * pace.js styles - minimal  - (_document-setup.scss)
- * -------------------------------------------------------------------
- */
+
 .pace {
 	-webkit-pointer-events: none;
 	pointer-events: none;
@@ -445,12 +376,6 @@ img.pull-left {
 	height: 6px;
 }
 
-/** 
- * ===================================================================
- * 04. preloader - (_preloader-1.scss)
- *
- * ------------------------------------------------------------------- 
- */
 #preloader {
 	position: fixed;
 	top: 0;
@@ -508,12 +433,7 @@ img.pull-left {
 	}
 }
 
-/** 
- * ===================================================================
- * 05. forms - (_forms.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 fieldset {
 	border: none;
 }
@@ -585,7 +505,7 @@ select {
 	color: #252525;
 }
 
-/* IE9 and below */
+
 .oldie .ss-custom-select::after {
 	display: none;
 }
@@ -626,18 +546,15 @@ label > input[type="checkbox"], label > input[type="radio"] {
 	top: .15rem;
 }
 
-/**
- * Style Placeholder Text  
- * -
- */
+
 ::-webkit-input-placeholder {
 	color: #a1a1a1;
 }
 :-moz-placeholder {
-	color: #a1a1a1;  /* Firefox 18- */
+	color: #a1a1a1;  
 }
 ::-moz-placeholder {
-	color: #a1a1a1;  /* Firefox 19+ */
+	color: #a1a1a1; 
 }
 :-ms-input-placeholder {
 	color: #a1a1a1;
@@ -646,12 +563,7 @@ label > input[type="checkbox"], label > input[type="radio"] {
 	color: #a1a1a1 !important;
 }
 
-/** 
- * ===================================================================
- * 06. buttons - (_button-essentials.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 .button,
 a.button,
 button,
@@ -752,17 +664,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/** 
- * ===================================================================
- * 07. other components - (_others.scss)
- *
- * ------------------------------------------------------------------- 
- */
-
-/**
- * alert box - (_alert-box.scss)
- * -------------------------------------------------------------------
- */
 .alert-box {
 	padding: 2.1rem 4rem 2.1rem 3rem;
 	position: relative;
@@ -794,14 +695,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #bba31b;
 }
 
-/**
- * additional typo styles - (_additional-typo.scss)
- * -------------------------------------------------------------------
- */
-
-/**
- * drop cap 
- */
+/
 .drop-cap:first-letter {
 	float: left;
 	margin: 0;
@@ -814,9 +708,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #313131;
 }
 
-/**
- * line definition style
- */
+
 .lining dt, .lining dd {
 	display: inline;
 	margin: 0;
@@ -836,9 +728,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-left: -0.2em;
 }
 
-/**
- * dictionary definition style
- */
 .dictionary-style dt {
 	display: inline;
 	counter-reset: definitions;
@@ -855,19 +744,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	content: counter(definitions, decimal) ". ";
 }
 
-/** 
- * Pull Quotes
- * -----------
- * markup:
- *
- * <aside class="pull-quote">
- *		<blockquote>
- *			<p></p>
- *		</blockquote>
- *	</aside>
- *
- * --------------------------------------------------------------------- 
- */
+
 .pull-quote {
 	position: relative;
 	padding: 2.1rem 3rem 2.1rem 0px;
@@ -896,56 +773,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	content: none;
 }
 
-/** 
- * Stats Tab
- * ---------
- * markup:
- *
- * <ul class="stats-tabs">
- *		<li><a href="#">[value]<em>[name]</em></a></li>
- *	</ul>
- *
- * Extend this object into your markup.
- *
- * ---------------------------------------------------------------------
- */
-.stats-tabs {
-	padding: 0;
-	margin: 3rem 0;
-}
-.stats-tabs li {
-	display: inline-block;
-	margin: 0 1.5rem 3rem 0;
-	padding: 0 1.5rem 0 0;
-	border-right: 1px solid #ccc;
-}
-.stats-tabs li:last-child {
-	margin: 0;
-	padding: 0;
-	border: none;
-}
-.stats-tabs li a {
-	display: inline-block;
-	font-size: 2.5rem;
-	font-family: "poppins-bold", sans-serif;
-	border: none;
-	color: #252525;
-}
-.stats-tabs li a:hover {
-	color: #00d8d9;
-}
-.stats-tabs li a em {
-	display: block;
-	margin: .6rem 0 0 0;
-	font-size: 1.4rem;
-	font-family: "poppins-regular", sans-serif;
-	color: #888888;
-}
 
-/**
- * skillbars - (_skillbars.scss)
- * -------------------------------------------------------------------
- */
+
 .skill-bars {
 	list-style: none;
 	margin: 6rem 0 3rem;
@@ -970,7 +799,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	line-height: 2.4rem;
 }
 .skill-bars li .progress {
-	background: #313131;
+	background: #006d6d;
 	position: relative;
 	height: 100%;
 }
@@ -983,7 +812,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: white;
 	font-size: 1.1rem;
 	line-height: 1;
-	background: #313131;
+	background: #006d6d;
 	padding: .6rem .6rem;
 	border-radius: 3px;
 }
@@ -1020,12 +849,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .skill-bars li .percent100 { width: 100%; }
 
 
-/** 
- * ===================================================================
- * 08. common styles (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
 .grey-section {
 	background: #ebebeb;
 }
@@ -1055,11 +878,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	letter-spacing: .4rem;
 }
 
-/**
- * responsive:
- * common styles
- * ------------------------------------------------------------------- 
- */
+
 @media only screen and (max-width:768px) {
 	.section-intro {
 		max-width: 650px;
@@ -1084,12 +903,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/** 
- * ===================================================================
- * 09. header styles - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 header {
 	position: fixed;
 	width: 95%;
@@ -1129,10 +943,7 @@ header .logo a {
 	background: url("../img/logo.png") no-repeat center;
 	background-size: 92px 15px;
 }
-/**
- * menu toggle - (_layout.css)
- * ------------------------------------------------------------------- 
- */
+
 .menu-toggle {
 	float: left;
 	width: 40px;
@@ -1235,7 +1046,7 @@ header .logo a {
 
 /* dropdown nav */
 .main-navigation {
-	background: #000000;
+	background: #272727;
 	padding: 24px 30px 42px;
 	margin: 0;
 	width: 100%;
@@ -1266,11 +1077,7 @@ header .logo a {
 	color: #00d8d9;
 }
 
-/**
- * responsive:
- * header styles
- * --------------------------------------------------------------- 
- */
+
 @media only screen and (max-width:1024px) {
 	header .top-bar {
 		left: 60px;
@@ -1293,14 +1100,8 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 10. intro - (_layout.scss) 
- *
- * ------------------------------------------------------------------- 
- */
 #intro {
-	background: #151515 url(../img/intro-bg.jpg) no-repeat center bottom;
+	background: #131313 no-repeat center bottom;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1425,11 +1226,6 @@ header .logo a {
 	color: #00d8d9;
 }
 
-/**
- * responsive:
- * Intro
- * --------------------------------------------------------------- 
- */
 @media only screen and (max-width:1024px) {
 	.intro-content h1 {
 		font-size: 7.6rem;
@@ -1489,12 +1285,7 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 11. about - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 #about {
 	background: #FFFFFF;
 	padding-top: 12rem;
@@ -1570,11 +1361,6 @@ header .logo a {
 	margin-right: 4rem;
 }
 
-/**
- * responsive:
- * about
- * ------------------------------------------------------------------- 
- */
 @media only screen and (max-width:1024px) {
 	.intro-info {
 		margin-right: 0;
@@ -1789,12 +1575,7 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 13. portfolio - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
 #portfolio {
 	background: #FFFFFF;
 	padding-top: 12rem;
@@ -1873,11 +1654,7 @@ header .logo a {
 	transform: scale(1.05);
 }
 
-/**
- * responsive:
- * portfolio
- * ------------------------------------------------------------------- 
- */
+
 @media only screen and (max-width:1024px) {
 	#portfolio .folio-title {
 		font-size: 3.1rem;
@@ -1894,13 +1671,9 @@ header .logo a {
 	}
 }
 
-/**
- * Popup Modal - (_layout.scss)
- * ------------------------------------------------------------------
- */
 .popup-modal {
 	max-width: 550px;
-	background: #FFFFFF;
+	background: rgb(255, 255, 255);
 	position: relative;
 	margin: 0 auto;
 }
@@ -2053,200 +1826,6 @@ header .logo a {
 	border-radius: 50%;
 }
 
-/**
- * section ads - (_layout.scss)
- * ------------------------------------------------------------------- 
- */
-.section-ads h2 {
-	position: relative;
-	padding-bottom: 2.1rem;
-}
-.section-ads h2::after {
-	content: "";
-	display: block;
-	height: 3px;
-	width: 80px;
-	background: rgba(0, 0, 0, 0.2);
-	position: absolute;
-	left: 50%;
-	bottom: 0;
-	margin-left: -40px;
-}
-.section-ads h2 a, .section-ads h2 a:visited {
-	color: #313131;
-}
-.section-ads span {
-	color: #3F0D39;
-}
-
-/**
- * responsive:
- * cta
- * -------------------------------------------------------------------
- */
-@media only screen and (max-width:650px) {
-	.cta-content {
-		max-width: 650px;
-	}
-	.cta-content h2 {
-		font-size: 2.4rem;
-	}
-}
-
-
-/** 
- * ===================================================================
- * 15. services - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
-#services {
-	background: #313131 url(../img/bg.jpg) no-repeat center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	padding-top: 12rem;
-	padding-bottom: 12rem;
-	color: white;
-	position: relative;
-}
-#services .overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #151515;
-	opacity: .9;
-}
-
-#services .section-intro {
-	margin-bottom: 1.8rem;
-}
-
-#services .section-intro h1 {
-	color: white;
-}
-#services .section-intro h5 {
-	color: #00d8d9;
-}
-#services .section-intro p {
-	color: rgba(255, 255, 255, 0.7);
-}
-.services-content {
-	max-width: 1200px;
-}
-.services-list {
-	margin-top: 1.2rem;
-	text-align: center;
-}
-.services-list .service {
-	margin-bottom: 1.2rem;
-	padding: 0 30px;
-}
-.services-list .icon {
-	display: inline-block;
-	margin-bottom: 2.1rem;
-}
-.services-list .icon i {
-	font-size: 5.4rem;
-	color: #00d8d9;
-}
-.services-list h3 {
-	color: #FFFFFF;
-}
-.services-list .desc {
-	color: rgba(255, 255, 255, 0.6);
-}
-
-/* pagination */
-.owl-pagination {
-	text-align: center;
-	width: 100%;
-	margin: .6rem 0 0;
-}
-.owl-theme .owl-controls .owl-page {
-	display: inline-block;
-}
-.owl-theme .owl-controls .owl-page span {
-	display: block;
-	width: 1.2rem;
-	height: 1.2rem;
-	margin: 1.2rem .8rem 0 .8rem;
-	border-radius: 50%;
-	display: inline-block;
-	background: #FFFFFF;
-}
-.owl-theme .owl-controls .owl-page.active span {
-	background: #00d8d9;
-}
-
-
-/** 
- * ===================================================================
- * 16. stats - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
-#stats {
-	background: #990047;
-	padding-top: 7.2rem;
-	padding-bottom: 6rem;
-	text-align: center;
-}
-#stats .row {
-	max-width: 1440px;
-}
-#stats .stat {
-	border-left: 1px solid rgba(255, 255, 255, 0.12);
-	min-height: 17.4rem;
-}
-#stats .stat:first-child {
-	border: none;
-}
-#stats .icon-part i {
-	font-size: 4.8rem;
-	color: #000000;
-}
-#stats .stat-count {
-	color: #FFFFFF;
-	font-size: 3.6rem;
-	margin-top: 1.2rem;
-	margin-bottom: 0;
-	font-family: "poppins-medium", sans-serif;
-	color: white;
-}
-#stats .stat-title {
-	color: rgba(255, 255, 255, 0.5);
-}
-
-/**
- * responsive:
- * stats
- * -------------------------------------------------------------------
- */
-@media only screen and (max-width:1024px) {
-	#stats .stat:nth-child(n) {
-		border-left: 1px solid rgba(255, 255, 255, 0.12);
-		padding-bottom: 1.5rem;
-	}
-	#stats .stat:nth-child(3n+1) {
-		border: none;
-	}
-}
-@media only screen and (max-width:768px) {
-	#stats .stat:nth-child(n) {
-		border-left: 1px solid rgba(255, 255, 255, 0.12);
-	}
-	#stats .stat:nth-child(2n+1) {
-		border: none;
-	}
-}
-@media only screen and (max-width:600px) {
-	#stats .stat:nth-child(n) {
-		border: none;
-	}
-}
 
 
 /** 
@@ -2602,4 +2181,3 @@ footer .copyright span:last-child::after {
 	background: #000000;
 }
 
-/*# sourceMappingURL=main.css.map */
